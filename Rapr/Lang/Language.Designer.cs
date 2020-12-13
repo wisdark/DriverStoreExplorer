@@ -71,8 +71,6 @@ namespace Rapr.Lang {
         
         /// <summary>
         ///   Looks up a localized string similar to (Found New Version v{0} - {1}).
-        ///   {0} - Placeholder for version number
-        ///   {1} - Placeholder for About_Download
         /// </summary>
         public static string About_FoundNewVersion {
             get {
@@ -113,7 +111,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Driver.
+        ///   Looks up a localized string similar to &amp;Add Driver.
         /// </summary>
         public static string Button_Add_Package {
             get {
@@ -122,11 +120,29 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete Driver.
+        ///   Looks up a localized string similar to &amp;Cancel.
+        /// </summary>
+        public static string Button_Cancel {
+            get {
+                return ResourceManager.GetString("Button_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;Delete Driver(s).
         /// </summary>
         public static string Button_Delete_Package {
             get {
                 return ResourceManager.GetString("Button_Delete_Package", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &amp;Export Driver(s).
+        /// </summary>
+        public static string Button_Export_Drivers {
+            get {
+                return ResourceManager.GetString("Button_Export_Drivers", resourceCulture);
             }
         }
         
@@ -140,7 +156,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Refresh.
+        ///   Looks up a localized string similar to &amp;Refresh.
         /// </summary>
         public static string Button_Refresh {
             get {
@@ -149,7 +165,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select Old Drivers.
+        ///   Looks up a localized string similar to Select &amp;Old Driver(s).
         /// </summary>
         public static string Button_Select_Old {
             get {
@@ -158,7 +174,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Force Deletion.
+        ///   Looks up a localized string similar to Force Deletio&amp;n.
         /// </summary>
         public static string Check_Force_Delete {
             get {
@@ -167,7 +183,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install Driver.
+        ///   Looks up a localized string similar to &amp;Install Driver.
         /// </summary>
         public static string Check_Install_Driver {
             get {
@@ -176,11 +192,20 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose Driver Store.
+        ///   Looks up a localized string similar to &amp;Choose Driver Store.
         /// </summary>
         public static string ChooseDriverStore_Title {
             get {
                 return ResourceManager.GetString("ChooseDriverStore_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Boot Critical.
+        /// </summary>
+        public static string Column_BootCritical {
+            get {
+                return ResourceManager.GetString("Column_BootCritical", resourceCulture);
             }
         }
         
@@ -257,6 +282,24 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to False.
+        /// </summary>
+        public static string Column_Text_False {
+            get {
+                return ResourceManager.GetString("Column_Text_False", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True.
+        /// </summary>
+        public static string Column_Text_True {
+            get {
+                return ResourceManager.GetString("Column_Text_True", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Driver Version.
         /// </summary>
         public static string Column_Version {
@@ -275,7 +318,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deselect.
+        ///   Looks up a localized string similar to &amp;Deselect.
         /// </summary>
         public static string Context_Deselect {
             get {
@@ -284,7 +327,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deselect All.
+        ///   Looks up a localized string similar to Deselect &amp;All.
         /// </summary>
         public static string Context_Deselect_All {
             get {
@@ -293,7 +336,16 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open Folder Location.
+        ///   Looks up a localized string similar to &amp;Export Driver.
+        /// </summary>
+        public static string Context_Export_Driver {
+            get {
+                return ResourceManager.GetString("Context_Export_Driver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open &amp;Folder Location.
         /// </summary>
         public static string Context_Open_Folder {
             get {
@@ -302,7 +354,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select.
+        ///   Looks up a localized string similar to &amp;Select.
         /// </summary>
         public static string Context_Select {
             get {
@@ -311,7 +363,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select All.
+        ///   Looks up a localized string similar to Select &amp;All.
         /// </summary>
         public static string Context_Select_All {
             get {
@@ -320,7 +372,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select Old Drivers.
+        ///   Looks up a localized string similar to Select &amp;Old Drivers.
         /// </summary>
         public static string Context_Select_Old {
             get {
@@ -384,7 +436,6 @@ namespace Rapr.Lang {
         
         /// <summary>
         ///   Looks up a localized string similar to Contents saved to {0}. Export Completed..
-        ///   {0} - Placeholder for export path
         /// </summary>
         public static string Export_Complete {
             get {
@@ -403,7 +454,6 @@ namespace Rapr.Lang {
         
         /// <summary>
         ///   Looks up a localized string similar to Export failed: {0}.
-        ///   {0} - Placeholder for 
         /// </summary>
         public static string Export_Failed {
             get {
@@ -412,25 +462,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Driver Store.
-        /// </summary>
-        public static string Group_DriverStore {
-            get {
-                return ResourceManager.GetString("Group_DriverStore", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Started without admin privileges. Some features are disabled..
-        /// </summary>
-        public static string Label_RunAsAdmin {
-            get {
-                return ResourceManager.GetString("Label_RunAsAdmin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to File.
+        ///   Looks up a localized string similar to &amp;File.
         /// </summary>
         public static string Menu_File {
             get {
@@ -439,7 +471,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose Driver Store.
+        ///   Looks up a localized string similar to &amp;Choose Driver Store.
         /// </summary>
         public static string Menu_File_Choose_Driver_Store {
             get {
@@ -448,7 +480,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit.
+        ///   Looks up a localized string similar to E&amp;xit.
         /// </summary>
         public static string Menu_File_Exit {
             get {
@@ -457,7 +489,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Export Driver List.
+        ///   Looks up a localized string similar to &amp;Export Driver List.
         /// </summary>
         public static string Menu_File_Export {
             get {
@@ -466,16 +498,16 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Run As Admin.
+        ///   Looks up a localized string similar to Ex&amp;port All Drivers.
         /// </summary>
-        public static string Menu_File_RunAs_Admin {
+        public static string Menu_File_Export_All_Drivers {
             get {
-                return ResourceManager.GetString("Menu_File_RunAs_Admin", resourceCulture);
+                return ResourceManager.GetString("Menu_File_Export_All_Drivers", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to View Logs.
+        ///   Looks up a localized string similar to &amp;View Logs.
         /// </summary>
         public static string Menu_File_View_Logs {
             get {
@@ -484,7 +516,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Help.
+        ///   Looks up a localized string similar to &amp;Help.
         /// </summary>
         public static string Menu_Help {
             get {
@@ -493,7 +525,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to About.
+        ///   Looks up a localized string similar to &amp;About.
         /// </summary>
         public static string Menu_Help_About {
             get {
@@ -502,7 +534,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to &amp;Language.
         /// </summary>
         public static string Menu_Language {
             get {
@@ -511,36 +543,16 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Always Run As Admin.
+        ///   Looks up a localized string similar to Deletion of {0} ({1}) failed..
         /// </summary>
-        public static string Menu_Option_Always_RunAs_Admin {
+        public static string Message_Delete_Fail {
             get {
-                return ResourceManager.GetString("Menu_Option_Always_RunAs_Admin", resourceCulture);
+                return ResourceManager.GetString("Message_Delete_Fail", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Options.
-        /// </summary>
-        public static string Menu_Options {
-            get {
-                return ResourceManager.GetString("Menu_Options", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to delete.
-        /// </summary>
-        public static string Message_Delete {
-            get {
-                return ResourceManager.GetString("Message_Delete", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to About to {0} {1} packages from driver store..
-        ///   {0} - Placeholder for Message_Delete
-        ///   {1} - Placeholder for number of packages
+        ///   Looks up a localized string similar to About to delete {0} packages from driver store..
         /// </summary>
         public static string Message_Delete_Multiple_Packages {
             get {
@@ -549,9 +561,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Removed {0} ({1}) from driver store.
-        ///   {0} - Placeholder for inf package file
-        ///   {1} - Placeholder for oem inf file
+        ///   Looks up a localized string similar to Removed {0} ({1}) from driver store..
         /// </summary>
         public static string Message_Delete_Package {
             get {
@@ -560,10 +570,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error removing {0} ({1}) from driver store {2}.
-        ///   {0} - Placeholder for inf package file
-        ///   {1} - Placeholder for oem inf file
-        ///   {2} - Placeholder for Tip_Driver_In_Use
+        ///   Looks up a localized string similar to Error removing {0} ({1}) from driver store..
         /// </summary>
         public static string Message_Delete_Package_Error {
             get {
@@ -572,8 +579,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Removed {0} packages from driver store.
-        ///   {0} - Placeholder for number of packages
+        ///   Looks up a localized string similar to Removed {0} packages from driver store..
         /// </summary>
         public static string Message_Delete_Packages {
             get {
@@ -582,8 +588,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error removing some packages from driver store {0}.
-        ///   {0} - Placeholder for Tip_Driver_In_Use
+        ///   Looks up a localized string similar to Error removing some packages from driver store..
         /// </summary>
         public static string Message_Delete_Packages_Error {
             get {
@@ -592,22 +597,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deletion of {0} ({1}) {2}..
-        ///   {0} - Placeholder for inf package file
-        ///   {1} - Placeholder for oem inf file
-        ///   {2} - Placeholder for Message_Success or Message_Failed
-        /// </summary>
-        public static string Message_Delete_Result {
-            get {
-                return ResourceManager.GetString("Message_Delete_Result", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to About to {0} {1} ({2}) from driver store..
-        ///   {0} - Placeholder for Message_Delete
-        ///   {1} - Placeholder for inf package file
-        ///   {2} - Placeholder for oem inf file
+        ///   Looks up a localized string similar to About to delete {0} ({1}) from driver store..
         /// </summary>
         public static string Message_Delete_Single_Package {
             get {
@@ -616,18 +606,16 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detailed Error Log.
+        ///   Looks up a localized string similar to Deletion of {0} ({1}) succeeded..
         /// </summary>
-        public static string Message_Detailed_Log {
+        public static string Message_Delete_Success {
             get {
-                return ResourceManager.GetString("Message_Detailed_Log", resourceCulture);
+                return ResourceManager.GetString("Message_Delete_Success", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Added {0} the package {1} to driver store.
-        ///   {0} - Placeholder for 
-        ///   {1} - Placeholder for path to inf
+        ///   Looks up a localized string similar to Added the package {0} to driver store..
         /// </summary>
         public static string Message_Driver_Added {
             get {
@@ -636,9 +624,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error adding {0} the package {1} to driver store.
-        ///   {0} - Placeholder for 
-        ///   {1} - Placeholder for path to inf
+        ///   Looks up a localized string similar to Error adding {0} the package to driver store..
         /// </summary>
         public static string Message_Driver_Added_Error {
             get {
@@ -647,11 +633,20 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  &amp; installed.
+        ///   Looks up a localized string similar to Added the package {0} &amp; installed to driver store..
         /// </summary>
-        public static string Message_Driver_And_Installed {
+        public static string Message_Driver_Added_Installed {
             get {
-                return ResourceManager.GetString("Message_Driver_And_Installed", resourceCulture);
+                return ResourceManager.GetString("Message_Driver_Added_Installed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error adding the package {0} &amp; installed to driver store..
+        /// </summary>
+        public static string Message_Driver_Added_Installed_Error {
+            get {
+                return ResourceManager.GetString("Message_Driver_Added_Installed_Error", resourceCulture);
             }
         }
         
@@ -665,20 +660,38 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to failed.
+        ///   Looks up a localized string similar to Export all driver packages failed..
         /// </summary>
-        public static string Message_Failed {
+        public static string Message_Export_All_Drivers_Fail {
             get {
-                return ResourceManager.GetString("Message_Failed", resourceCulture);
+                return ResourceManager.GetString("Message_Export_All_Drivers_Fail", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to force delete.
+        ///   Looks up a localized string similar to Export all driver packages succeeded..
         /// </summary>
-        public static string Message_Force_Delete {
+        public static string Message_Export_All_Drivers_Success {
             get {
-                return ResourceManager.GetString("Message_Force_Delete", resourceCulture);
+                return ResourceManager.GetString("Message_Export_All_Drivers_Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About to force delete {0} packages from driver store..
+        /// </summary>
+        public static string Message_ForceDelete_Multiple_Packages {
+            get {
+                return ResourceManager.GetString("Message_ForceDelete_Multiple_Packages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About to force delete {0} ({1}) from driver store..
+        /// </summary>
+        public static string Message_ForceDelete_Single_Package {
+            get {
+                return ResourceManager.GetString("Message_ForceDelete_Single_Package", resourceCulture);
             }
         }
         
@@ -701,16 +714,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Another operation in progress.
-        /// </summary>
-        public static string Message_Operation_In_Progress {
-            get {
-                return ResourceManager.GetString("Message_Operation_In_Progress", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This utility cannot be run in pre-Vista OS.
+        ///   Looks up a localized string similar to This utility cannot be run in pre-Vista OS..
         /// </summary>
         public static string Message_Requires_Later_OS {
             get {
@@ -719,20 +723,11 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select a driver entry first.
+        ///   Looks up a localized string similar to Scanning driver store....
         /// </summary>
-        public static string Message_Select_Driver_Entry {
+        public static string Message_Scanning_Driver_Store {
             get {
-                return ResourceManager.GetString("Message_Select_Driver_Entry", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to succeeded.
-        /// </summary>
-        public static string Message_Success {
-            get {
-                return ResourceManager.GetString("Message_Success", resourceCulture);
+                return ResourceManager.GetString("Message_Scanning_Driver_Store", resourceCulture);
             }
         }
         
@@ -765,21 +760,10 @@ namespace Rapr.Lang {
         
         /// <summary>
         ///   Looks up a localized string similar to About {0}.
-        ///   {0} - Placeholder for Product_Name
         /// </summary>
         public static string Product_About_Title {
             get {
                 return ResourceManager.GetString("Product_About_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Driver Store Explorer v{0}.
-        ///   {0} - Placeholder for installed version number
-        /// </summary>
-        public static string Product_Credits {
-            get {
-                return ResourceManager.GetString("Product_Credits", resourceCulture);
             }
         }
         
@@ -789,15 +773,6 @@ namespace Rapr.Lang {
         public static string Product_Name {
             get {
                 return ResourceManager.GetString("Product_Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [Read-Only Mode].
-        /// </summary>
-        public static string Product_Name_Additional_ReadOnly {
-            get {
-                return ResourceManager.GetString("Product_Name_Additional_ReadOnly", resourceCulture);
             }
         }
         
@@ -820,6 +795,15 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exporting all driver packages....
+        /// </summary>
+        public static string Status_Exporting_All_Drivers {
+            get {
+                return ResourceManager.GetString("Status_Exporting_All_Drivers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ready.
         /// </summary>
         public static string Status_Label {
@@ -838,18 +822,7 @@ namespace Rapr.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Running in Read-Only mode.
-        /// </summary>
-        public static string Status_Running_ReadOnly {
-            get {
-                return ResourceManager.GetString("Status_Running_ReadOnly", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Selected {0} Driver(s). Total size: {1}..
-        ///   {0} - Placeholder for number of selected Drivers
-        ///   {1} - Placeholder for disk space
         /// </summary>
         public static string Status_Selected_Drivers {
             get {
@@ -863,15 +836,6 @@ namespace Rapr.Lang {
         public static string Tip_Driver_In_Use {
             get {
                 return ResourceManager.GetString("Tip_Driver_In_Use", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to About.
-        /// </summary>
-        public static string Title_About {
-            get {
-                return ResourceManager.GetString("Title_About", resourceCulture);
             }
         }
         

@@ -31,6 +31,16 @@ namespace Rapr.Utils
             this.OfflineStoreLocation = imagePath;
         }
 
+        public bool SupportAddInstall => this.Type == DriverStoreType.Online;
+
+        public bool SupportForceDeletion => this.Type == DriverStoreType.Online;
+
+        public bool SupportDeviceNameColumn => this.Type == DriverStoreType.Online;
+
+        public bool SupportExportDriver => true;
+
+        public bool SupportExportAllDrivers => true;
+
         public List<DriverStoreEntry> EnumeratePackages()
         {
             var ptr = NativeMethods.DriverStoreOpen(null, null, 0, IntPtr.Zero);
@@ -190,7 +200,6 @@ namespace Rapr.Utils
                 DriverFolderLocation = Path.GetDirectoryName(driverStoreFilename),
                 DriverSize = DriverStoreRepository.GetFolderSize(new DirectoryInfo(Path.GetDirectoryName(driverStoreFilename))),
                 BootCritical = GetObjectPropertyInfo<bool?>(driverStoreHandle, driverStoreFilename, DeviceHelper.DEVPKEY_DriverPackage_BootCritical),
-                Inbox = GetObjectPropertyInfo<bool?>(driverStoreHandle, driverStoreFilename, DeviceHelper.DEVPKEY_DriverPackage_Inbox),
             };
 
             driverStoreEntries.Add(driverStoreEntry);
@@ -228,6 +237,10 @@ namespace Rapr.Utils
 
             return default;
         }
+
+        public bool ExportDriver(string infName, string destinationPath) => throw new NotImplementedException();
+
+        public bool ExportAllDrivers(string destinationPath) => throw new NotImplementedException();
 
         // Define other methods and classes here
         private const int MAX_PATH = 260;

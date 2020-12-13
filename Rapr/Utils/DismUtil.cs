@@ -31,9 +31,39 @@ namespace Rapr.Utils
         {
             try
             {
-                Marshal.PrelinkAll(typeof(NativeMethods));
+                Marshal.Prelink(((Func<DismLogLevel, string, string, int>)NativeMethods.DismInitialize).Method);
             }
             catch (DllNotFoundException)
+            {
+                return false;
+            }
+            catch (EntryPointNotFoundException)
+            {
+                return false;
+            }
+
+            return true;
+        })();
+
+        public bool SupportAddInstall => this.Type == DriverStoreType.Online;
+
+        public bool SupportForceDeletion => this.Type == DriverStoreType.Online;
+
+        public bool SupportDeviceNameColumn => this.Type == DriverStoreType.Online;
+
+        public bool SupportExportDriver => false;
+
+        public bool SupportExportAllDrivers { get; } = new Func<bool>(() =>
+        {
+            try
+            {
+                Marshal.Prelink(((Func<DismSession, string, int>)NativeMethods._DismExportDriver).Method);
+            }
+            catch (DllNotFoundException)
+            {
+                return false;
+            }
+            catch (EntryPointNotFoundException)
             {
                 return false;
             }
@@ -70,7 +100,6 @@ namespace Rapr.Utils
                             DriverFolderLocation = Path.GetDirectoryName(driverPackage.OriginalFileName),
                             DriverSize = DriverStoreRepository.GetFolderSize(new DirectoryInfo(Path.GetDirectoryName(driverPackage.OriginalFileName))),
                             BootCritical = driverPackage.BootCritical,
-                            Inbox = driverPackage.InBox,
                         };
 
                         var deviceInfo = driverInfo?.OrderByDescending(d => d.IsPresent)?.FirstOrDefault(e =>
@@ -215,6 +244,50 @@ namespace Rapr.Utils
             }
         }
 
+        public bool ExportDriver(string infName, string destinationPath) => throw new NotSupportedException();
+
+        public bool ExportAllDrivers(string destinationPath)
+        {
+            try
+            {
+                DismApi.Initialize(DismLogLevel.LogErrors);
+
+                try
+                {
+                    using (DismSession session = this.GetSession())
+                    {
+                        int hresult = NativeMethods._DismExportDriver(session, destinationPath);
+
+                        if (hresult != 0 && hresult != 1)
+                        {
+                            string lastErrorMessage = DismApi.GetLastErrorMessage();
+                            if (!string.IsNullOrEmpty(lastErrorMessage))
+                            {
+                                throw new DismException(lastErrorMessage.Trim());
+                            }
+
+                            throw new DismException(hresult);
+                        }
+                    }
+                }
+                finally
+                {
+                    DismApi.Shutdown();
+                }
+            }
+            catch (DismRebootRequiredException)
+            {
+                return true;
+            }
+            catch (DismException ex)
+            {
+                Trace.TraceError(ex.ToString());
+                return false;
+            }
+
+            return true;
+        }
+
         #endregion
 
         internal static class NativeMethods
@@ -222,6 +295,10 @@ namespace Rapr.Utils
             [DllImport("DismApi", CharSet = CharSet.Unicode)]
             [return: MarshalAs(UnmanagedType.Error)]
             public static extern int DismInitialize(DismLogLevel logLevel, string logFilePath, string scratchDirectory);
+
+            [DllImport("DismApi", CharSet = CharSet.Unicode)]
+            [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>")]
+            public static extern int _DismExportDriver(DismSession Session, string Destination);
         }
     }
 }

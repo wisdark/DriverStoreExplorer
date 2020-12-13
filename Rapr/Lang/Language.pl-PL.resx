@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Button_Add_Package" xml:space="preserve">
-    <value>添加驱动包(&amp;A)</value>
+    <value>Dodaj sterownik</value>
   </data>
   <data name="Button_Delete_Package" xml:space="preserve">
-    <value>删除驱动包(&amp;D)</value>
+    <value>Usuń sterownik</value>
   </data>
   <data name="Button_OK" xml:space="preserve">
-    <value>确认(&amp;O)</value>
+    <value>&amp;OK</value>
   </data>
   <data name="Button_Refresh" xml:space="preserve">
-    <value>刷新(&amp;R)</value>
+    <value>Odśwież</value>
   </data>
   <data name="Button_Select_Old" xml:space="preserve">
-    <value>选取旧的驱动(&amp;O)</value>
+    <value>Wybierz przestarzałe sterowniki</value>
   </data>
   <data name="Check_Force_Delete" xml:space="preserve">
-    <value>强制删除(&amp;N)</value>
+    <value>Wymuś usunięcie</value>
   </data>
   <data name="Check_Install_Driver" xml:space="preserve">
-    <value>安装驱动(&amp;I)</value>
+    <value>Zainstaluj sterownik</value>
   </data>
   <data name="Column_Date" xml:space="preserve">
-    <value>日期</value>
+    <value>Data sterownika</value>
   </data>
   <data name="Column_Driver_Class" xml:space="preserve">
-    <value>驱动类别</value>
+    <value>Typ sterownika</value>
   </data>
   <data name="Column_Inf" xml:space="preserve">
     <value>INF</value>
@@ -151,243 +151,259 @@
     <value>OEM INF</value>
   </data>
   <data name="Column_Provider" xml:space="preserve">
-    <value>提供商</value>
+    <value>Dostawca</value>
   </data>
   <data name="Column_Signed_By" xml:space="preserve">
-    <value>签名</value>
+    <value>Podpis cyfrowy</value>
   </data>
   <data name="Column_Size" xml:space="preserve">
-    <value>大小</value>
+    <value>Rozmiar</value>
   </data>
   <data name="Column_Version" xml:space="preserve">
-    <value>版本</value>
+    <value>Wersja sterownika</value>
   </data>
   <data name="Context_Delete" xml:space="preserve">
-    <value>删除</value>
+    <value>Usuń</value>
   </data>
   <data name="Context_Deselect" xml:space="preserve">
-    <value>取消选择(&amp;D)</value>
+    <value>Odznacz</value>
   </data>
   <data name="Context_Deselect_All" xml:space="preserve">
-    <value>取消选择所有(&amp;A)</value>
+    <value>Odznacz wszystkie</value>
   </data>
   <data name="Context_Select" xml:space="preserve">
-    <value>选择(&amp;S)</value>
+    <value>Zaznacz</value>
   </data>
   <data name="Context_Select_All" xml:space="preserve">
-    <value>选择所有(&amp;A)</value>
+    <value>Zaznacz wszystkie</value>
   </data>
   <data name="Context_Select_Old" xml:space="preserve">
-    <value>选择旧的驱动(&amp;O)</value>
+    <value>Zaznacz przestarzałe sterowniki</value>
   </data>
   <data name="Message_Delete_Multiple_Packages" xml:space="preserve">
-    <value>正准备从驱动存储中删除 {0} 驱动包。</value>
+    <value>Zamierzasz usunąć {0} pakiet(y/ów) sterowników.</value>
+    <comment>{0} - Placeholder for number of packages</comment>
   </data>
   <data name="Message_Delete_Single_Package" xml:space="preserve">
-    <value>正准备从驱动存储中删除 {0} ({1})。</value>
+    <value>Zamierzasz usunąć pakiet sterowników {0} ({1}).</value>
+    <comment>{0} - Placeholder for inf package file
+{1} - Placeholder for oem inf file</comment>
   </data>
   <data name="Message_Requires_Later_OS" xml:space="preserve">
-    <value>此工具无法在比Windows Vista老的操作系统中运行。</value>
+    <value>Ta aplikacja nie działa z systemami starszymi jak Windows Vista.</value>
   </data>
   <data name="Message_Sure" xml:space="preserve">
-    <value>你确定吗？</value>
+    <value>Jesteś pewien?</value>
   </data>
   <data name="Message_Title_Warning" xml:space="preserve">
-    <value>警告</value>
+    <value>Ostrzeżenie</value>
   </data>
   <data name="Operations_Text" xml:space="preserve">
-    <value>操作</value>
+    <value>Operacje</value>
   </data>
   <data name="Product_Name" xml:space="preserve">
     <value>Driver Store Explorer</value>
   </data>
   <data name="Status_Label" xml:space="preserve">
-    <value>准备就绪</value>
+    <value>Gotowy</value>
   </data>
   <data name="Tip_Driver_In_Use" xml:space="preserve">
-    <value>[提示：驱动可能正在使用中，可尝试强制删除驱动包]</value>
+    <value>[INFO: Sterownik może być wciąż w użyciu. Użyj funkcji wymuszonego usunięcia]</value>
   </data>
-  <data name="Message_No_Entries" xml:space="preserve">
-    <value>无项目被加载。</value>
+  <data name="Menu_Help" xml:space="preserve">
+    <value>Pomoc</value>
   </data>
-  <data name="Dialog_Open_Filter_Text" xml:space="preserve">
-    <value>选择INF文件</value>
+  <data name="Menu_Help_About" xml:space="preserve">
+    <value>O programie</value>
   </data>
-  <data name="Dialog_Open_Filters" xml:space="preserve">
-    <value>INF文件 | *.inf</value>
+  <data name="Menu_File" xml:space="preserve">
+    <value>Plik</value>
+  </data>
+  <data name="Menu_File_Export" xml:space="preserve">
+    <value>Eksportuj listę sterowników</value>
+  </data>
+  <data name="Menu_File_Exit" xml:space="preserve">
+    <value>Wyjdź</value>
   </data>
   <data name="Menu_File_View_Logs" xml:space="preserve">
-    <value>查看日志(&amp;V)</value>
+    <value>Wyświetl logi</value>
   </data>
   <data name="Date_Format" xml:space="preserve">
     <value>{0:d}</value>
   </data>
-  <data name="Menu_File_Exit" xml:space="preserve">
-    <value>退出(&amp;X)</value>
+  <data name="Message_No_Entries" xml:space="preserve">
+    <value>Nie załadowano wpisów.</value>
   </data>
-  <data name="Menu_File_Export" xml:space="preserve">
-    <value>导出驱动列表(&amp;E)</value>
+  <data name="Dialog_Open_Filter_Text" xml:space="preserve">
+    <value>Wybierz plik INF</value>
   </data>
-  <data name="Menu_File" xml:space="preserve">
-    <value>文件(&amp;F)</value>
-  </data>
-  <data name="Menu_Help_About" xml:space="preserve">
-    <value>关于(&amp;A)</value>
-  </data>
-  <data name="Menu_Help" xml:space="preserve">
-    <value>帮助(&amp;H)</value>
+  <data name="Dialog_Open_Filters" xml:space="preserve">
+    <value>Pliki INF | *.inf</value>
   </data>
   <data name="Product_About_Title" xml:space="preserve">
-    <value>关于 {0}</value>
+    <value>O programie {0}</value>
+    <comment>{0} - Placeholder for Product_Name</comment>
   </data>
   <data name="Export_Error" xml:space="preserve">
-    <value>错误</value>
-  </data>
-  <data name="UnitTest_Language" xml:space="preserve">
-    <value>简体中文</value>
-  </data>
-  <data name="Dialog_Export_Filters" xml:space="preserve">
-    <value>CSV文件 | *.csv</value>
+    <value>Błąd</value>
   </data>
   <data name="About_Project_Description" xml:space="preserve">
-    <value>你可以从下方链接获取该程序的最新版本和更新说明：
+    <value>Najnowszą wersję aplikacji oraz dziennik zmian znajdziesz tutaj:
     https://github.com/lostindark/DriverStoreExplorer/releases
 
-报告错误/新需求：
+Zgłaszanie błędów/sugerowanie funkcjonalności:
     https://github.com/lostindark/DriverStoreExplorer/issues
 
-贡献者：
+Autorzy:
     https://github.com/lostindark/DriverStoreExplorer/graphs/contributors
 
-鸣谢：
+Podziękowania:
     ObjectListView http://objectlistview.sourceforge.net/
     Managed DismApi Wrapper https://github.com/jeffkl/ManagedDism
 
-使用许可：
+Licencja użytkowania:
     https://github.com/lostindark/DriverStoreExplorer/blob/master/LICENSE
 </value>
   </data>
+  <data name="UnitTest_Language" xml:space="preserve">
+    <value>Polski</value>
+  </data>
+  <data name="Dialog_Export_Filters" xml:space="preserve">
+    <value>Pliki CSV | *.csv</value>
+  </data>
   <data name="Status_Adding_Package" xml:space="preserve">
-    <value>添加驱动包...</value>
+    <value>Dodawanie pakietu sterownika...</value>
   </data>
   <data name="Status_Deleting_Packages" xml:space="preserve">
-    <value>删除驱动包...</value>
-  </data>
-  <data name="Status_No_Drivers_Selected" xml:space="preserve">
-    <value>未选择驱动。</value>
-  </data>
-  <data name="Status_Selected_Drivers" xml:space="preserve">
-    <value>已选中{0}个驱动。总磁盘空间占用：{1}。</value>
-  </data>
-  <data name="Message_Log_File_NotFound" xml:space="preserve">
-    <value>找不到日志文件。</value>
-  </data>
-  <data name="Message_Error" xml:space="preserve">
-    <value>错误</value>
-  </data>
-  <data name="Message_Driver_Added_Error" xml:space="preserve">
-    <value>添加 {0} 驱动包到驱动存储出错。</value>
-  </data>
-  <data name="Message_Driver_Added" xml:space="preserve">
-    <value>已添加驱动包 {0} 到驱动存储。</value>
-  </data>
-  <data name="Message_Delete_Packages_Error" xml:space="preserve">
-    <value>从驱动存储中删除部分驱动包出错。</value>
-  </data>
-  <data name="Message_Delete_Packages" xml:space="preserve">
-    <value>已从驱动存储中删除了 {0} 个驱动包。</value>
-  </data>
-  <data name="Message_Delete_Package_Error" xml:space="preserve">
-    <value>从驱动存储中移除{0} ({1}) 失败。</value>
+    <value>Usuwanie pakietu sterownika(ów)...</value>
   </data>
   <data name="Message_Delete_Package" xml:space="preserve">
-    <value>已从驱动存储中删除{0} ({1})。</value>
+    <value>Usunięto {0} ({1}) z magazynu sterowników.</value>
+    <comment>{0} - Placeholder for inf package file
+{1} - Placeholder for oem inf file</comment>
   </data>
-  <data name="Export_Failed" xml:space="preserve">
-    <value>导出错误：{0}</value>
+  <data name="Message_Delete_Packages" xml:space="preserve">
+    <value>Usunięto {0} pakiet(y/ów) z magazynu sterowników.</value>
+    <comment>{0} - Placeholder for number of packages</comment>
+  </data>
+  <data name="Message_Delete_Package_Error" xml:space="preserve">
+    <value>Błąd w trakcie usuwania {0} ({1}) z magazynu sterowników.</value>
+    <comment>{0} - Placeholder for inf package file
+{1} - Placeholder for oem inf file</comment>
+  </data>
+  <data name="Message_Delete_Packages_Error" xml:space="preserve">
+    <value>Błąd podczas usuwania pewnych pakietów z magazynu sterowników.</value>
+    
+    
+  </data>
+  <data name="Message_Driver_Added" xml:space="preserve">
+    <value>Dodano pakiet {0} do magazynu sterowników.</value>
+    <comment>{0} - Placeholder for path to inf</comment>
+  </data>
+  <data name="Message_Driver_Added_Error" xml:space="preserve">
+    <value>Błąd podczas dodawania pakietu {0} do magazynu sterowników.</value>
+    <comment>{0} - Placeholder for path to inf</comment>
+  </data>
+  <data name="Message_Log_File_NotFound" xml:space="preserve">
+    <value>Nie znaleziono pliku log.</value>
+  </data>
+  <data name="Message_Error" xml:space="preserve">
+    <value>Błąd</value>
   </data>
   <data name="Export_Complete" xml:space="preserve">
-    <value>内容已保存到 {0}。导出完成。</value>
+    <value>Eksport udany. Zawartość zapisana do {0}.</value>
+    <comment>{0} - Placeholder for export path</comment>
+  </data>
+  <data name="Export_Failed" xml:space="preserve">
+    <value>Błąd eksportowania: {0}</value>
+    <comment>{0} - Placeholder for error message</comment>
+  </data>
+  <data name="Status_Selected_Drivers" xml:space="preserve">
+    <value>Wybrano {0} sterownik(i/ów). Rozmiar całkowity: {1}.</value>
+    <comment>{0} - Placeholder for number of selected Drivers
+{1} - Placeholder for disk space</comment>
+  </data>
+  <data name="Status_No_Drivers_Selected" xml:space="preserve">
+    <value>Nie wybrano sterowników.</value>
   </data>
   <data name="Context_Open_Folder" xml:space="preserve">
-    <value>打开文件夹(&amp;F)</value>
+    <value>Otwórz folder zawierający</value>
   </data>
   <data name="DriverStore_LocalMachine" xml:space="preserve">
-    <value>本机</value>
+    <value>Komputer lokalny</value>
   </data>
   <data name="Menu_File_Choose_Driver_Store" xml:space="preserve">
-    <value>选择驱动存储(&amp;C)</value>
+    <value>Wybierz lokalizację sterowników</value>
   </data>
   <data name="DriverStore_Offline" xml:space="preserve">
-    <value>离线驱动存储</value>
+    <value>Magazyn sterowników offline</value>
   </data>
   <data name="ChooseDriverStore_Title" xml:space="preserve">
-    <value>选择驱动存储</value>
+    <value>Wybierz lokalizację sterowników</value>
   </data>
   <data name="Menu_Language" xml:space="preserve">
-    <value>语言(&amp;L)</value>
+    <value>Język</value>
   </data>
   <data name="Column_DeviceName" xml:space="preserve">
-    <value>设备名称</value>
+    <value>Nazwa urządzenia</value>
   </data>
   <data name="About_VersionUpToDate" xml:space="preserve">
-    <value>(已是最新版)</value>
+    <value>(aktualny)</value>
   </data>
   <data name="About_FoundNewVersion" xml:space="preserve">
-    <value>(发现新版本 v{0} {1})</value>
+    <value>(Znaleziono nową wersję v{0} - {1})</value>
+    <comment>{0} - Placeholder for version number
+{1} - Placeholder for About_Download</comment>
   </data>
   <data name="About_Download" xml:space="preserve">
-    <value>下载</value>
+    <value>Pobierz</value>
   </data>
   <data name="Message_Scanning_Driver_Store" xml:space="preserve">
-    <value>正在扫描驱动存储...</value>
+    <value>Skanowanie magazynu sterowników...</value>
   </data>
   <data name="Message_ForceDelete_Single_Package" xml:space="preserve">
-    <value>正准备从驱动存储中强制删除 {0} ({1})。</value>
+    <value>Zamierzasz wymusić usunięcie {0} ({1}) z magazynu sterowników.</value>
+    <comment>{0} - Placeholder for inf package file
+{1} - Placeholder for oem inf file</comment>
   </data>
   <data name="Message_ForceDelete_Multiple_Packages" xml:space="preserve">
-    <value>正准备从驱动存储中强制删除 {0} 个驱动包。</value>
+    <value>Zamierzasz wymusić usunięcie {0} pakietu(ów) z magazynu sterowników.</value>
+    <comment>{0} - Placeholder for number of packages</comment>
   </data>
   <data name="Message_Delete_Success" xml:space="preserve">
-    <value>已成功删除{0} ({1})。</value>
+    <value>Usuwanie {0} ({1}) powiodło się.</value>
+    <comment>{0} - Placeholder for inf package file
+{1} - Placeholder for oem inf file</comment>
   </data>
   <data name="Message_Delete_Fail" xml:space="preserve">
-    <value>删除{0} ({1}) 失败。</value>
+    <value>Usuwanie {0} ({1}) nie powiodło się.</value>
+    <comment>{0} - Placeholder for inf package file
+{1} - Placeholder for oem inf file</comment>
   </data>
   <data name="Message_Driver_Added_Installed" xml:space="preserve">
-    <value>已添加并安装驱动包 {0} 到驱动存储。</value>
+    <value>Dodano pakiet {0} &amp; zainstalowany w magazynie sterowników.</value>
+    <comment>{0} - Placeholder for path to inf</comment>
   </data>
   <data name="Message_Driver_Added_Installed_Error" xml:space="preserve">
-    <value>添加并安装驱动包 {0} 到驱动存储出错。</value>
-  </data>
-  <data name="Message_Export_All_Drivers_Fail" xml:space="preserve">
-    <value>导出所有驱动包失败。</value>
-  </data>
-  <data name="Message_Export_All_Drivers_Success" xml:space="preserve">
-    <value>导出所有驱动包成功。</value>
-  </data>
-  <data name="Status_Exporting_All_Drivers" xml:space="preserve">
-    <value>导出所有驱动包...</value>
-  </data>
-  <data name="Context_Export_Driver" xml:space="preserve">
-    <value>导出驱动包(&amp;E)</value>
+    <value>Błąd podczas dodawania pakietu {0} &amp; zainstalowany w magazynie sterowników.</value>
+    <comment>{0} - Placeholder for path to inf</comment>
   </data>
   <data name="Button_Export_Drivers" xml:space="preserve">
-    <value>导出驱动包(&amp;E)</value>
+    <value>Eksportuj sterownik(i)</value>
+  </data>
+  <data name="Context_Export_Driver" xml:space="preserve">
+    <value>Eksportuj sterownik</value>
   </data>
   <data name="Menu_File_Export_All_Drivers" xml:space="preserve">
-    <value>导出所有驱动包(&amp;P)</value>
+    <value>Eksportuj wszystkie sterowniki</value>
   </data>
-  <data name="Button_Cancel" xml:space="preserve">
-    <value>取消(&amp;C)</value>
+  <data name="Message_Export_All_Drivers_Fail" xml:space="preserve">
+    <value>Eksportowanie wszystkich pakietów sterowników nie powiodło się.</value>
   </data>
-  <data name="Column_BootCritical" xml:space="preserve">
-    <value>启动关键</value>
+  <data name="Message_Export_All_Drivers_Success" xml:space="preserve">
+    <value>Pomyślnie wyeksportowano wszystkie pakiety sterowników.</value>
   </data>
-  <data name="Column_Text_False" xml:space="preserve">
-    <value>是</value>
-  </data>
-  <data name="Column_Text_True" xml:space="preserve">
-    <value>否</value>
+  <data name="Status_Exporting_All_Drivers" xml:space="preserve">
+    <value>Eksportowanie wszystkich pakietów sterowników...</value>
   </data>
 </root>
